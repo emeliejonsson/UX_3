@@ -1,0 +1,268 @@
+body {
+    width: 1440px;
+    height: 1024px;
+}
+
+
+/* ---------------------- NAVIGATION HEADER ---------------------- */
+.navigation {
+    width: 1440px;
+    height: 120px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: space-between;
+    border-bottom: 2px solid black;
+    margin-bottom: 1rem;
+    padding-bottom: 1rem;
+}
+
+.navigation p {
+    font-family: Manrope;
+}
+
+.navigation-left {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+}
+
+.navigation-right {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+}
+
+.new-booking-button {
+    width: 40px;
+    height: 40px;
+    border-radius: 4px;
+    font-size: 20px;
+}
+
+#logo-img {
+    width: 138px;
+    height: 90px;
+}
+
+.navigation-divider {
+    width: auto;
+    height: 10px;
+}
+
+/* ---------------------- ALL MAIN CALENDAR CONTAINER ---------------------- */
+#main-calendar-container {
+    height: 904px;
+    width: 1440px;
+}
+
+/* ---------------------- SORTING BY PROFESSION BUTTONS ---------------------- */
+
+.profession-sorting-buttons {
+    display: flex;
+    flex-direction: row;
+}
+
+.profession-button {
+    width: 128px;
+    height: 39px;
+    padding: 4px 4px;
+    border-radius: 10px;
+    background-color: #1A3A5F;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 14px;
+}
+
+.profession-button img {
+    width: 23px;
+    height: 23px;
+}
+
+/* ---------------------- SORT EMPLOYEE BUTTONS ---------------------- */
+
+.sorting-and-date-rows {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+.sorting-options-container {
+    font-family: Inter;
+    border-radius: 4px;
+    width: 310px;
+    height: 40;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-bottom: 0.5rem;
+}
+
+.sorting-button {
+    background-color: #E0E0E0;
+    height: 29px;
+    border: none;
+    border-radius: 4px;
+    font-family: Inter;
+}
+
+.sorting-button:hover {
+    background-color: #1A3A5F;
+}
+
+/* ---------------------- EMPLOYEE ROW ---------------------- */
+.employee-info-container {
+    width: 310px;
+    height: 56px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid black;
+    padding: 0.4rem;
+    font-family: Inter;
+}
+
+.employee-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.employee-table {
+    display: flex;
+    flex-direction: column;
+}
+
+.employee-profession {
+    background-color: #1A3A5F;
+    color: white;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    font-family: Inter;
+    font-size: 20px;
+    font-weight: 700;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+}
+
+.sort-desc-button {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    height: 35px;
+    width: 310px;
+    border-radius: 4px;
+    font-family: Inter;
+    background-color: white;
+    margin: 0 0 0.5rem 0.5rem;
+    border: 1px solid black;
+}
+
+
+
+/* ---------------------- BOOKING INFO ---------------------- */
+
+.booking-info-container img {
+    height: 45px;
+    width: 35px; 
+    border: 1px solid black;
+    padding: 0.25rem 0.23rem 0.25rem 0.23rem;
+    margin-left: -0.5rem;
+}
+
+.booking-info-container img,
+.status-box-weekend {
+    margin-top: -1rem;
+}
+
+.booking-info-container {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.divider {
+    border: 1px solid black;
+}
+
+.status-box {
+    display: flex;
+    align-items: center;
+    height: 56px;
+    width: 270px;
+}
+
+.all-status-boxes {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.status-box-weekend {
+    background-color: #E0E0E0;
+    border-left: 0.1px solid black;
+    border-bottom: 0.1px solid black;
+    border-bottom: 0.1px solid black;
+    border-top: 0.1px solid black;;
+    width: 24px;
+    height: 56px;
+}
+
+
+/* ---------------------- WEEKS AND DAYS CONTAINER ---------------------- */
+
+.date-row {
+    display: flex;
+    font-family: Inter;
+}
+
+.main-date-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.week-text{
+    font-weight: bolder;
+}
+
+.week-container {
+    color: #1A3A5F;
+    background-color: #E0E0E0;
+}
+
+.week-container,
+.weekday-container {
+    display: flex;
+    width: 270px;
+    height: 40px;
+    border: 0.1px solid black;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.day {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 44.4px;
+    height: 40px;
+    border-right: 0.1px solid #E0E0E0;
+}
+
+.weekend {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 24px;
+    height: 40px;
+    border-left: 0.1px solid black;
+    background-color: #E0E0E0;
+}
