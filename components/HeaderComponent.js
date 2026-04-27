@@ -33,12 +33,9 @@ export default {
             <p>{{ title }}</p>
             <button class="new-booking-button">+</button>
         </div>
-
-        <div class="navigation-divider">
-            <img :src="divider" id="navigation-divider"/>
-        </div>
         
         <div class="navigation-right">
+            <img :src="divider" id="navigation-divider"/>
            <profession-button v-for="(profession, index) in professions" :key="index" :text="profession.text" :img="profession.img">
            </profession-button>
         </div>

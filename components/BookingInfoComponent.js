@@ -24,9 +24,9 @@ export default {
 
     template: `
     <div class="booking-info-container">
-    <img v-for="item in visibleStatus"
-        :key="item.id" 
-        :src="item.src"/>
+        <div class="one-booking-container" v-for="item in visibleStatus">
+            <img :key="item.id" :src="item.src"/>
+        </div>
     </div>
     `
 }
