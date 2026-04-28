@@ -24,7 +24,7 @@ export default {
                     <div class="day">
                         <p>T</p>
                     </div>
-                    <div class="day">
+                    <div id="day-friday" class="day">
                         <p>F</p>
                     </div>
                     <div class="weekend">
