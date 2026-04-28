@@ -12,7 +12,7 @@ const app = {
             console.log("Button clicked")
         }
 
-        return{showMay, showMayWeeks};
+        return { showMay, showMayWeeks };
     }
 }
 

@@ -4,9 +4,9 @@ import DateComponent from "./DateComponent.js";
 
 export default {
 
-    props: ['showMay'],
+    props: ['showmay'],
 
-    setup(props) {
+    setup() {
         const weeks = [
             { week: "v.16", period: "13 april - 19 april" },
             { week: "v.17", period: "20 april - 26 april" },
@@ -22,7 +22,7 @@ export default {
             { week: "v.23", period: "1 juni - 7 juni" },
         ]
 
-        return { weeks, mayWeeks, props };
+        return { weeks, mayWeeks };
     },
 
     components: {
@@ -42,13 +42,13 @@ export default {
                     </button>
                 </div>
 
-                <div v-if="!props.showMay">
+                <div v-if="!showmay">
                     <div class="date-row">
                         <date-component v-for="(week, index) in weeks" :key="index" :week="week.week" :period="week.period"></date-component>
                     </div>
                 </div>
 
-                <div v-if="props.showMay">
+                <div v-if="showmay">
                     <div class="date-row">
                         <date-component v-for="(week, index) in mayWeeks" :key="index" :week="week.week" :period="week.period"></date-component>
                     </div>
