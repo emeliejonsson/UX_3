@@ -4,7 +4,15 @@ import CalendarComponent from "./components/CalendarComponent.js";
 
 const app = {
     setup() {
-        return{};
+        const showMay = ref(false);
+        console.log("button not clicked")
+
+        function showMayWeeks() {
+            showMay.value = !showMay.value;
+            console.log("Button clicked")
+        }
+
+        return{showMay, showMayWeeks};
     }
 }
 

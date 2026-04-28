@@ -27,8 +27,8 @@
 <body>
     <div id="app">
         <header-component logo="assets/logo.png" date="Idag 13 april" title="Ny bokning"
-            divider="assets/dotted-vertical-line.png"></header-component>
-        <calendar-component></calendar-component>
+            divider="assets/dotted-vertical-line.png" @change-weeks="showMayWeeks"></header-component>
+        <calendar-component :showMay="showMay"></calendar-component>
     </div>
 </body>
 

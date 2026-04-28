@@ -88,6 +88,7 @@ body {
 #main-calendar-container {
     height: 904px;
     width: 1440px;
+    overflow: scroll;
 }
 
 /* ---------------------- SORTING BY PROFESSION BUTTONS ---------------------- */

@@ -4,15 +4,25 @@ import DateComponent from "./DateComponent.js";
 
 export default {
 
-    setup() {
+    props: ['showMay'],
+
+    setup(props) {
         const weeks = [
-            {week: "v.16", period: "13 april - 19 april"},
-            {week: "v.17", period: "20 april - 26 april"},
-            {week: "v.18", period: "27 april - maj"},
-            {week: "v.19", period: "4 maj - 10 maj"},
+            { week: "v.16", period: "13 april - 19 april" },
+            { week: "v.17", period: "20 april - 26 april" },
+            { week: "v.18", period: "27 april - maj" },
+            { week: "v.19", period: "4 maj - 10 maj" },
 
         ];
-        return{ weeks };
+
+        const mayWeeks = [
+            { week: "v.20", period: "11 maj - 17 maj" },
+            { week: "v.21", period: "18 maj - 24 maj" },
+            { week: "v.22", period: "25 maj - 31 maj" },
+            { week: "v.23", period: "1 juni - 7 juni" },
+        ]
+
+        return { weeks, mayWeeks, props };
     },
 
     components: {
@@ -32,10 +42,19 @@ export default {
                     </button>
                 </div>
 
-                <div class="date-row">
-                    <date-component v-for="(week, index) in weeks" :key="index" :week="week.week" :period="week.period"></date-component>
+                <div v-if="!props.showMay">
+                    <div class="date-row">
+                        <date-component v-for="(week, index) in weeks" :key="index" :week="week.week" :period="week.period"></date-component>
+                    </div>
+                </div>
+
+                <div v-if="props.showMay">
+                    <div class="date-row">
+                        <date-component v-for="(week, index) in mayWeeks" :key="index" :week="week.week" :period="week.period"></date-component>
+                    </div>
                 </div>
             </div>
+
             <employee-component></employee-component>
         </div>
     `

@@ -24,6 +24,20 @@ export default {
             { profession: "S", name: "Aisha Abdi", statusIds: ["100per", "prel-50per", "available", "absent", "50per"] },
             { profession: "E", name: "Takahiro Tanaka", statusIds: ["100per", "prel-50per", "available", "absent", "50per"] },
             { profession: "Må", name: "Giovanni Ricci", statusIds: ["100per", "prel-50per", "available", "absent", "50per"] },
+            { profession: "E", name: "Example Examplesson", statusIds: ["100per", "prel-50per", "available", "absent", "50per"] },
+            { profession: "Mu", name: "Example Examplesson", statusIds: ["100per", "prel-50per", "available", "absent", "50per"] },
+            { profession: "S", name: "Example Examplesson", statusIds: ["100per", "prel-50per", "available", "absent", "50per"] },
+            { profession: "S", name: "Example Examplesson", statusIds: ["100per", "prel-50per", "available", "absent", "50per"] },
+            { profession: "R", name: "Example Examplesson", statusIds: ["100per", "prel-50per", "available", "absent", "50per"] },
+            { profession: "E", name: "Example Examplesson", statusIds: ["100per", "prel-50per", "available", "absent", "50per"] },
+            { profession: "S", name: "Example Examplesson", statusIds: ["100per", "prel-50per", "available", "absent", "50per"] },
+            { profession: "R", name: "Example Examplesson", statusIds: ["100per", "prel-50per", "available", "absent", "50per"] },
+            { profession: "Må", name: "Example Examplesson", statusIds: ["100per", "prel-50per", "available", "absent", "50per"] },
+            { profession: "Mu", name: "Example Examplesson", statusIds: ["100per", "prel-50per", "available", "absent", "50per"] },
+            { profession: "E", name: "Example Examplesson", statusIds: ["100per", "prel-50per", "available", "absent", "50per"] },
+            { profession: "R", name: "Example Examplesson", statusIds: ["100per", "prel-50per", "available", "absent", "50per"] },
+            { profession: "S", name: "Example Examplesson", statusIds: ["100per", "prel-50per", "available", "absent", "50per"] },
+            { profession: "Må", name: "Example Examplesson", statusIds: ["100per", "prel-50per", "available", "absent", "50per"] },
         ];
 
         return { employees };

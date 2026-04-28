@@ -32,7 +32,7 @@ export default {
             <div class="navigation-left-date">
                 <button class="date-button">&lt;</button>
                 <p>{{ date }}</p>
-                <button class="date-button">&gt;</button>
+                <button class="date-button" @click="$emit('change-weeks')">&gt;</button>
             </div>
             <p>{{ title }}</p>
             <button class="new-booking-button">+</button>
