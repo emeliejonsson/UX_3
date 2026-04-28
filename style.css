@@ -109,6 +109,7 @@ body {
     justify-content: space-around;
     align-items: center;
     font-size: 14px;
+    margin-bottom: 0.5rem;
 }
 
 .profession-button img {
