@@ -29,7 +29,11 @@ export default {
 
         <div class="navigation-left">
             <img :src="logo" id="logo-img"/>
-            <p>{{ date }}</p>
+            <div class="navigation-left-date">
+                <button class="date-button">&lt;</button>
+                <p>{{ date }}</p>
+                <button class="date-button">&gt;</button>
+            </div>
             <p>{{ title }}</p>
             <button class="new-booking-button">+</button>
         </div>

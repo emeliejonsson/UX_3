@@ -38,11 +38,38 @@ body {
     margin-bottom: 15px;
 }
 
+.navigation-left-date {
+    display: flex;
+    align-items: center;
+}
+
+.navigation-left-date p {
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+}
+
+.date-button {
+    font-size: 17px;
+    width: 30px;
+    height: 30px;
+    background-color: white;
+    border: none;
+}
+
+.date-button:hover {
+    background-color: #E0E0E0;
+    border: 1px solid black;
+}
+
 .new-booking-button {
     width: 40px;
     height: 40px;
     border-radius: 4px;
     font-size: 20px;
+}
+
+.new-booking-button:hover {
+    background-color: #E0E0E0;
 }
 
 #logo-img {
@@ -89,6 +116,10 @@ body {
     height: 23px;
 }
 
+.profession-button:hover {
+    opacity: 50%;
+}
+
 /* ---------------------- SORT EMPLOYEE BUTTONS ---------------------- */
 
 .sorting-and-date-rows {
@@ -120,6 +151,7 @@ body {
 
 .sorting-button:hover {
     background-color: #1A3A5F;
+    color: white;
 }
 
 /* ---------------------- EMPLOYEE ROW ---------------------- */
@@ -236,10 +268,6 @@ body {
     width: 272px;
 }
 
-.week-text {
-    font-weight: bolder;
-}
-
 .week-container {
     color: #1A3A5F;
     background-color: #E0E0E0;
@@ -251,8 +279,17 @@ body {
     width: 270px;
     height: 40px;
     border: 0.1px solid black;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
+}
+
+.week-text {
+    font-weight: bolder;
+    margin-left: 1rem;
+}
+
+.period-text {
+    margin-right: 1rem;;
 }
 
 .day {

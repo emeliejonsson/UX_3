@@ -1,3 +1,5 @@
+import BookingService from "../services/BookingService.js";
+
 export default {
     props: { statusIds: {
         type: Array,
